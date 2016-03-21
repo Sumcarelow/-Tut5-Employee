@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string>
-#include"Emplyee.h"
+#include"Employee.h"
 
 using namespace std;
 
