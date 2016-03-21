@@ -7,7 +7,8 @@ using namespace std;
 #define EMPLOYEE_H
 
 class Employee{
-private:
+
+protected:
 	string newNameOfEmployee;
 	int newStaffNumber;
 	float salary;
@@ -34,14 +35,17 @@ public:
 	//Other Functions
 	string name();
 	int staffNumber();
-	virtual float salary();
-
-
+	virtual float salary()
+	{
+		return 0.0;
+	}
 };
 
 class SalaryEmployee : Employee {
 public:
-	float salary();
+	float salary(){
+		return salary;
+	};
 };
 
 class HourlyEmployee : Employee{
